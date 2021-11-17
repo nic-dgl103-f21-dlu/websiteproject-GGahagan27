@@ -4,8 +4,29 @@ body {
   background-color: #f7f9fa;
 }
 
-.headerimage { opacity: 0.5;}
-/*add a navigation element selector to add CSS box model to eventtually*/
+.header1 {
+  background-image: url(Images/background_1.jpg); /*Argh, I need to figure out how to resize the image--I want to zoom out the photo */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: contain;
+}
+
+.header2 {
+  background-image: url(background_2); /*Argh, I need to figure out how to resize the image--I want to zoom out the photo */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/*Repeat the Header classes 3 more times for the other pagges...or should I make them ID's?*/
+
+.headerimage {
+  opacity: 0.5;
+}
+
+/*Navigation Starts Here. add a navigation element selector to add CSS box model to eventtually*/
 ul {
   list-style-type: none;
 } /*Make this a Nav UL class*/
@@ -21,4 +42,6 @@ h3 {
 .h3 {
   font-style: italic;
 }
-.span {color:blue}
+.span {
+  color: blue;
+}
