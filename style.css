@@ -6,13 +6,13 @@ body {
 
 /*Trying to find a way to make my background images transparent !!! MIGHT ADD ALL HEADER IMAGES TO THE HTML INSTEAD AND TARGET THEM ALL AT THE SAME TIME*/
 .header1 {
-  background-image: url(images/background_1.jpg);
+  background-image: url(images/background_1_transparent.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: contain;
   width: 100%;
-  height: 50%
+  height: 100%;
 }
 
 .header2 {
