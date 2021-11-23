@@ -1,18 +1,22 @@
 /*I am just playing with ideas right now, as well as figuring out the best way to do things. Everything here is subject to change!*/
 
+* {box-sizing: border-box;}
 body {
   background-color: #f7f9fa;
 }
-
+header {background-color:red;
+        display:block;
+        width: 100vw; height: 800px;}
+        
 /*Trying to find a way to make my background images transparent !!! MIGHT ADD ALL HEADER IMAGES TO THE HTML INSTEAD AND TARGET THEM ALL AT THE SAME TIME*/
 .header1 {
   background-image: url(images/background_1.jpg); /* Replacing all headers after reducing opacity and file size in Photoshop--AlSO! gotta figure out ASAP how to get the photos zoomed out correctly! */
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  background-size: contain;
-  width: 100%;
-  height: 100%; /*still figuring out how to size the headers*/
+  background-size: cover;
+ 
+
 }
 
 .header2 {
@@ -21,7 +25,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  width: 100%; height:50%;
+ : 
 }
 .header3 {
   background-image: url(images/events_bw.jpg);
@@ -29,6 +33,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
+   
 }
 .header4 {
   background-image: url(images/background_4.jpg);
@@ -36,6 +41,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
+  width: 
 }
 .header5 {
   background-image: url(images/background_5.jpeg);
@@ -43,6 +49,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
+  
 }
 
 
