@@ -2,8 +2,8 @@
 
 * {box-sizing: border-box;}
 body {
-  background-color: #e8eef1;
-  color: black;
+  background-color:black;
+  color: white;
   font-family: 'Raleway', sans-serif;
   font-size: 1.5em;
 
@@ -98,8 +98,8 @@ h3 {font-family: 'Montserrat', sans-serif;
   color: rgb(248, 52, 52);
 }
 h1 {display:block;
-    padding:15px;
-    margin:15px;
+    padding:30px;
+    margin: 30px;
     text-align: center;
    font-size: 70px;}
 h2 {font-size: 50px;
@@ -109,11 +109,31 @@ h3 {font-size:  30px;}
   font-style: italic;
 }
 
+/*page one styling starts here */
+
+.section {display:flex;
+          flex: row;
+          padding:20px;
+          margin:20px;
+          }
+  
+
 /*Text Ends*/
 .span {
   color: white;
 }
-.article {
+
+#img {padding:40px;
+  margin-left:40px;
+  margin-right:40px;}
+
+.article { padding:40px;
+          margin-left:40px;
+          margin-right:40px;
+          text-align: justify;
+          
+}
+#article {  
  
   padding: 15px;
   margin: 40px 40px;
