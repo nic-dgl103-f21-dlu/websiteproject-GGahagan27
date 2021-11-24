@@ -28,14 +28,14 @@ header {background-color:#e8eef1;
  
 }
 .header3 {
-  background-image: url(images/events_bw.jpg);
+  background-image: url(images/events_transparent.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: contain;
    
 }
-.header4 {
+.header4 
   background-image: url(images/background_4.jpg);
   background-repeat: no-repeat;
   background-position: center;
