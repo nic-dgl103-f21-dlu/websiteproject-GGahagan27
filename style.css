@@ -5,7 +5,8 @@ body {
   background-color:black;
   color: white;
   font-family: 'Raleway', sans-serif;
-  font-size: 1.5em;
+  font-size: 1.2em;
+  line-height: 1.5em;
 
 }
 
@@ -69,6 +70,7 @@ header {background-color:#e8eef1;
               line-height: 20px;
               color:white;
               position:absolute;
+              width:auto;
               bottom:150px;
             }
 
@@ -76,9 +78,10 @@ header {background-color:#e8eef1;
 
 nav {float: right;
   padding:20px;
-  margin-right:20px;}
+  margin-right:20px;
+  }
     
-ul {
+nav ul {
   list-style-type: none;
 } /*Make this a Nav UL class*/
 
@@ -113,6 +116,7 @@ h3 {font-size:  30px;}
 
 .section {display:flex;
           flex: row;
+          white-space: normal;
           padding:20px;
           margin:20px;
           }
@@ -125,11 +129,15 @@ h3 {font-size:  30px;}
 
 #img {padding:40px;
   margin-left:40px;
-  margin-right:40px;}
+  margin-right:40px;
+  width:100%;
+  height: auto;}
 
-.article { padding:40px;
+.article { padding-left:40px;
+          padding-right:40px;
           margin-left:40px;
           margin-right:40px;
+          height: 900px;
           text-align: justify;
           
 }
