@@ -8,27 +8,33 @@
   </head>
   <body>
     <header class="header2">
-      <img src="images/2x/logo square_white@2x.png" width="250" alt="Moon's Records Logo" class="logo" />
+      <img
+        src="images/2x/logo square_white@2x.png"
+        width="250"
+        alt="Moon's Records Logo"
+        class="logo"
+      />
       <nav>
         <!--you will want to add a li and Ul element to the navigation html for later styling--><!--You will also need to add the sublist for "About" and "Contact" as a sublist in under the homepage nav list item-->
         <li><a href="index.html">Home</a> &nbsp;</li>
-          <li><a href="page_2.html">New and Used Records</a> &nbsp;</li>
-          <!--need to figure out how to add a sublist for About and Contact (could just add them to the list with out doing that, I suppose)-->
-          <li><a href="page_3.html">Events</a> &nbsp;</li>
-          <li><a href="page_4.html">Skate Shop</a> &nbsp;</li>
-          <li><a href="page_5.html">Shop Moon's</a>&nbsp;</li>
+        <li><a href="page_2.html">New and Used Records</a> &nbsp;</li>
+        <!--need to figure out how to add a sublist for About and Contact (could just add them to the list with out doing that, I suppose)-->
+        <li><a href="page_3.html">Events</a> &nbsp;</li>
+        <li><a href="page_4.html">Skate Shop</a> &nbsp;</li>
+        <li><a href="page_5.html">Shop Moon's</a>&nbsp;</li>
       </nav>
       <div class="headerintro">
-      <h2>New and Used Vinyl</h2>
-      <!--Need to figure out if The heading and subheading/blurb should go above or below the navigation for sake of styling-->
-      <p>The Comox Valley's Best Selection of new and used vinyl records</p>
-    </div>
+        <h2>New and Used Vinyl</h2>
+        <!--Need to figure out if The heading and subheading/blurb should go above or below the navigation for sake of styling-->
+        <h3>The Comox Valley's Best Selection of new and used vinyl records</h3>
+      </div>
       <!--might make this a heading-->
     </header>
     <main>
       <article>
         <h1>Moon's Vinyl Collection</h1>
-        <p id="article"> <!--need to figure out column margins. Might need to write more content here to fill it out a bit...-->
+        <p id="article">
+          <!--need to figure out column margins. Might need to write more content here to fill it out a bit...-->
           At Moon’s, we have a passion for vinyl. Vinyl is timeless and provides
           a superior listening experience that newer technologies just can’t
           beat. we carry a wide variety of new and used Albums, EP's, single's,
@@ -41,22 +47,31 @@
         </p>
         <!--I'm not sure if I should wrap this in a div like the other headings in the same place. In this case it's actually the heading of the article-->
       </article>
-      <h2>Staff Picks</h2>
-      <!--still debating what to do here...whether it will say Staff Picks, or "Browse Genres " with pretend links-->
-      <div>
-        <!--I think use flexbox wrapper with  "space-between--to arrange these. Also change sizes as needed-->
-        <img
-          src="images/david_bowie.jpg"
-          width="200"
-          alt="David Bowie Hunky Dory album Cover"
-        />
-        <img
-          src="images/Fela.jpg"
-          width="200"
-          alt="Fela Kuti Live in Detroit Album Cover"
-        />
-        <img src="images/Sly and the Family Stone.jpg " />
-      </div>
+      <section class="staffpicks">
+        <h2 id="heading">Staff Picks</h2>
+        <!--still debating what to do here...whether it will say Staff Picks, or "Browse Genres " with pretend links-->
+        <div id="gallery">
+          <!--I think use flexbox wrapper with  "space-between--to arrange these. Also change sizes as needed-->
+          <img
+            src="images/david_bowie.jpg"
+            width="400"
+            alt="David Bowie Hunky Dory album Cover"
+            class="galleryimg"
+          />
+          <img
+            src="images/Fela.jpg"
+            width="400"
+            alt="Fela Kuti Live in Detroit Album Cover"
+            class="galleryimg"
+          />
+          <img
+            src="images/Sly and the Family Stone.jpg "
+            width="400"
+            alt="Sly and the Family Stone Album cover"
+            class="galleryimg"
+          />
+        </div>
+      </section>
       <!--fake photo links go here. Not sure what I'm going to do here since I had planned a slide show-->
     </main>
     <footer></footer>

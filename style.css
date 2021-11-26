@@ -1,25 +1,28 @@
 /*I am just playing with ideas right now, as well as figuring out the best way to do things. Everything here is subject to change!*/
 
-* {box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+}
 body {
-  background-color:black;
+  background-color: black;
   color: white;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 1.2em;
   line-height: 1.5em;
-
 }
 
+header {
+  background-color: #e8eef1;
+  display: block;
+  width: 100vw;
+  height: 900px;
+  position: relative;
+}
 
-
-header {background-color:#e8eef1;
-        display:block;
-        width: 100vw; height: 900px;
-        position: relative;}
-        
-.logo {padding: 20px;
-       margin: 20px;
- }
+.logo {
+  padding: 20px;
+  margin: 20px;
+}
 /*HEADER PHOTOS SUBJECT TO CHANGE*/
 /*Just read on CSS tricks that I might be able to consolidate my header classes in to one by separating my images with commmas...I knew there was a way!*/
 .header1 {
@@ -28,7 +31,6 @@ header {background-color:#e8eef1;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
- 
 }
 
 .header2 {
@@ -37,15 +39,13 @@ header {background-color:#e8eef1;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
- 
 }
 .header3 {
   background-image: url(images/events_transparent.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  background-size: cove4;
-   
+  background-size: cover;
 }
 .header4 {
   background-image: url(images/background_4.jpg);
@@ -53,7 +53,6 @@ header {background-color:#e8eef1;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  
 }
 .header5 {
   background-image: url(images/background_5.jpeg);
@@ -61,26 +60,27 @@ header {background-color:#e8eef1;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  
 }
 
-.headerintro {display:block;
-              padding: 20px;
-              margin-left:20px;
-              line-height: 20px;
-              color:white;
-              position:absolute;
-              width:auto;
-              bottom:150px;
-            }
+.headerintro {    /*NEED TO FIX LINE HEIGHT*/
+  display: block;
+  padding: 20px;
+  margin-left: 20px;
+  line-height: 1em;
+  color: white;
+  position: absolute;
+  bottom: 250px;
+
+}
 
 /*Navigation Starts. Ad a navigation element selector and possible navwrrapper class to add CSS box model to eventtually*/
 
-nav {float: right;
-  padding:20px;
-  margin-right:20px;
-  }
-    
+nav {
+  float: right;
+  padding: 20px;
+  margin-right: 20px;
+}
+
 nav ul {
   list-style-type: none;
 } /*Make this a Nav UL class*/
@@ -97,54 +97,79 @@ nav li a {
 
 h1,
 h2,
-h3 {font-family: 'Montserrat', sans-serif;
+h3 {
+  font-family: "Montserrat", sans-serif;
   color: rgb(248, 52, 52);
+ 
 }
-h1 {display:block;
-    padding:30px;
-    margin: 30px;
-    text-align: center;
-   font-size: 70px;}
-h2 {font-size: 50px;
-    }
-h3 {font-size:  30px;}
+h1 {
+  display: block;
+  padding: 30px;
+  margin: 30px;
+  text-align: center;
+  font-size: 70px;
+  line-height: 1em;
+}
+
+h2 {
+  font-size: 50px;
+}
+h3 {
+  font-size: 30px;
+}
 .h3 {
   font-style: italic;
 }
 
 /*page one styling starts here */
 
-.section {display:flex;
-          flex: row;
-          white-space: normal;
-          padding:20px;
-          margin:20px;
-          }
-  
+.section {
+  display: flex;
+  flex: row;
+  white-space: normal;
+  padding: 20px;
+  margin: 20px;
+}
 
 /*Text Ends*/
 .span {
   color: white;
 }
-
-#img {padding:40px;
-  margin-left:40px;
-  margin-right:40px;
-  width:100%;
-  height: auto;}
-
-.article { padding-left:40px;
-          padding-right:40px;
-          margin-left:40px;
-          margin-right:40px;
-          height: 900px;
-          text-align: justify;
-          
+.image {
+  width: 100%;
+  height: auto;
 }
-#article {  
- 
-  padding: 15px;
+#img {
+  display: block;
+  padding: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.article {
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+  height: 900px;
+  text-align: justify;
+}
+#article {
+  padding: 0px 40px 0px 40px;
   margin: 40px 40px;
   column-count: 2;
   text-align: justify;
+  column-gap:75px;
 }
+#heading {padding: 0px 20px 40px 20px}
+.staffpicks { padding:20px;
+              margin-right:70px;
+              margin-left:70px;
+              text-align: center;}
+#gallery     {display:flex;
+              flex-direction: row;
+              justify-content: space-around;
+              align-items: center;
+              }
+.galleryimg {margin: 1em;
+        box-shadow: 10px 10px #777;}
