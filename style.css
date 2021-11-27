@@ -1,4 +1,4 @@
-/*I am just playing with ideas right now, as well as figuring out the best way to do things. Everything here is subject to change!*/
+/*Globally applied styling/ Styling that goes on all the pages*/
 
 * {
   box-sizing: border-box;
@@ -19,12 +19,39 @@ header {
   position: relative;
 }
 
+/*Text Starts*/ /*Will change text size values to em'sor rems if needed for responsiveness*/
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(248, 52, 52);
+}
+h1 {
+  display: block;
+  padding: 30px;
+  margin: 30px;
+  text-align: center;
+  font-size: 70px;
+  line-height: 1em;
+}
+
+h2 {
+  font-size: 50px;
+}
+h3 {
+  font-size: 30px;
+}
+.h3 {
+  font-style: italic;
+}
+
 .logo {
   padding: 20px;
   margin: 20px;
 }
 /*HEADER PHOTOS SUBJECT TO CHANGE*/
-/*Just read on CSS tricks that I might be able to consolidate my header classes in to one by separating my images with commmas...I knew there was a way!*/
+/*mIGHT BE ABLE TO CONSOLIDATE ALL OF THIS WITH COMMAS BETWEEN IMAGE LINKS*/
 .header1 {
   background-image: url(images/background_1_transparentblue.jpg); /* Replacing all headers after reducing opacity and file size in Photoshop--AlSO! gotta figure out ASAP how to get the photos zoomed out correctly! */
   background-repeat: no-repeat;
@@ -62,7 +89,8 @@ header {
   background-size: cover;
 }
 
-.headerintro {    /*NEED TO FIX LINE HEIGHT*/
+.headerintro {
+  /*NEED TO FIX LINE HEIGHT*/
   display: block;
   padding: 20px;
   margin-left: 20px;
@@ -70,7 +98,20 @@ header {
   color: white;
   position: absolute;
   bottom: 250px;
-
+}
+.headerintro2 {
+  /*NEED TO FIX LINE HEIGHT*/
+  display: block;
+  padding: 20px;
+  margin-left: 20px;
+  line-height: 1em;
+  color: white;
+  position: absolute;
+  bottom: 100px;
+}
+#img2 {
+  position: absolute;
+  bottom: 400px;
 }
 
 /*Navigation Starts. Ad a navigation element selector and possible navwrrapper class to add CSS box model to eventtually*/
@@ -93,36 +134,7 @@ nav li a {
 
 /*Navigation Ends  */
 
-/*Text Starts*/ /*Will change text size values to em'sor rems if needed for responsiveness*/
-
-h1,
-h2,
-h3 {
-  font-family: "Montserrat", sans-serif;
-  color: rgb(248, 52, 52);
- 
-}
-h1 {
-  display: block;
-  padding: 30px;
-  margin: 30px;
-  text-align: center;
-  font-size: 70px;
-  line-height: 1em;
-}
-
-h2 {
-  font-size: 50px;
-}
-h3 {
-  font-size: 30px;
-}
-.h3 {
-  font-style: italic;
-}
-
-/*page one styling starts here */
-
+/*section applied to pages one, two and 3*/
 .section {
   display: flex;
   flex: row;
@@ -139,6 +151,8 @@ h3 {
   width: 100%;
   height: auto;
 }
+
+/*page one styling starts here */
 #img {
   display: block;
   padding: 40px;
@@ -154,22 +168,64 @@ h3 {
   height: 900px;
   text-align: justify;
 }
+/*PAGE 2 starts */
+
 #article {
   padding: 0px 40px 0px 40px;
-  margin: 40px 40px;
+  margin: 0px 200px 0px 200px;
   column-count: 2;
   text-align: justify;
-  column-gap:75px;
+  column-gap: 75px;
 }
-#heading {padding: 0px 20px 40px 20px}
-.staffpicks { padding:20px;
-              margin-right:70px;
-              margin-left:70px;
-              text-align: center;}
-#gallery     {display:flex;
-              flex-direction: row;
-              justify-content: space-around;
-              align-items: center;
-              }
-.galleryimg {margin: 1em;
-        box-shadow: 10px 10px #777;}
+#heading {
+  padding: 0px 20px 40px 20px;
+}
+.staffpicks {
+  padding: 20px;
+  margin-right: 70px;
+  margin-left: 70px;
+  text-align: center;
+}
+#gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.galleryimg {
+  margin: 1em;
+  box-shadow: 10px 10px #777;
+}
+
+/*
+
+/*Page 3 starts here*/
+
+.section2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 70px;
+}
+
+.article2 {
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: 40px;
+  margin-right: 50px;
+  width: 600px;
+  height: 950px;
+  text-align: justify;
+  border: solid 5px red;
+}
+.article3 {
+  padding-right: 50px;
+  padding-left: 50px;
+  margin-left: 50px;
+  margin-right: 40px;
+  width: 600px;
+  height: 950px;
+  text-align: justify;
+  border: solid 5px red;
+}

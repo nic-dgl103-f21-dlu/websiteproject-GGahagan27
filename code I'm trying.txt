@@ -6,3 +6,37 @@
     display:flex;
               flex-direction: column;
               flex-wrap: wrap;
+
+<a href="page_6.html"><h3 class="h3">Purchase Tickets</h3></a>
+
+.article2 {
+  padding-left: 100px;
+  padding-right:40px;
+  margin-left: 40px;
+  margin-right: 40px;
+  width:600px;
+  text-align: justify;
+}
+.article3 {
+  
+  padding-right:100px;
+  padding-left:40px;
+  margin-left 40px;
+  margin-right: 40px;
+  width:600px;
+  text-align: justify;
+}
+
+***this is for the position of the right hand header elements on page 2**
+
+.Headerintro2 {
+  /*NEED TO FIX LINE HEIGHT*/
+  display: block;
+  padding: 20px;
+  margin-left: 20px;
+  line-height: 1em;
+  color: white;
+  position: absolute;
+  bottom: 100px
+}
+
