@@ -7,9 +7,14 @@
     <!--FAViCON LINK GOING HERE; MAKE FAVICON-->
   </head>
   <body>
-    <header class="header4">
-      <!--Instead of the video going below the header,  I might make the header the video, and put a title in the section the video was going to go in like the other pages-->
-      <img src="images/2x/logo square_white@2x.png" width="250" alt="Moon's Records Logo" class="logo" />
+    <header class="header3">
+      <div>
+        <video class="background-video" width="100%" height="240" playsinline autoplay muted loop>
+          <source src="images/skatboarding_video.mov" />
+          <!--not sure if this file type will work. If not, I'll use an MP4 video-->
+          Your browser does not support the video tag.
+        </video>
+      </div>
       <nav>
         <ul>
           <li><a href="index.html">Home</a> &nbsp;</li>
@@ -21,10 +26,16 @@
         </ul>
       </nav>
       <div class="headerintro">
-      <h2>Skate Shop</h2>
-      <p>Blurb Goes Here</p>
-      <h3>Brands We Carry</h3>
-    </div>
+             <img
+      src="images/2x/logo square_white@2x.png"
+      width="250"
+      alt="Moon's Records Logo"
+      id="logo"
+    />
+        <h2>Skate Shop</h2>
+        <h3>Serving the Comox Valley's Skateboarding Community</h3>
+        <h3>Brands We Carry</h3>
+      </div>
       <ul>
         <li></li>
         <li></li>
@@ -35,31 +46,45 @@
       <p>And more...</p>
     </header>
     <main>
-      <section>
-        <video width="100%" height="240" controls>
-          <source src="images/skatboarding_video.mov" type="video/mov"> <!--not sure if this file type will work. If not, I'll use an MP4 video-->
-          <source src="movie.ogg" type="video/ogg">
-        Your browser does not support the video tag.
-        </video>
-        <!--this will either span the page wher the other headings have gone; or I will swap it with the photo on the left and put a heading here like the other pages-->
-        <img src="images/skate_kid.jpg">
+      <h1>Welcome to Cumberland's New Skateshop!</h1>
+      <!--this will either span the page wher the other headings have gone; or I will swap it with the photo on the left and put a heading here like the other pages-->
+      <section class="section">
+        <div>
+          <img src="images/skate_kid.jpg" class="image2" />
+        </div>
         <!--image will be to the right of the article-->
         <!--Shop image will go here to the left of the article under the video-->
-        <article>
-          <h2>Welcome To Cumberland's New Skate Shop</h2>
-          <p>
-            We are pleased to serve the skateboarding community in Cumberland
-            and the greater Comox Vally! Come check out our new skate shop in
-            the same building as Moon’s Records. We carry a variety of decks by
-            BC brands as well as We’ve got decks, trucks, wheels, grip tape, and
-            gear. Whatever you need, we’ve got you covered. We also sponsor
-            youth skate camps called Drop into Life (link). Whether you or your
-            child wants to shred street, ramp, or bowl, our camps provide a safe
-            space for youth to learn the fundamentals of skateboarding in a
-            positive environment. The camps are taught by seasoned and certified
-            skateboard instructors.
-          </p>
-        </article>
+       <div class="article">
+          <article >
+            <h3>Check Us Out</h3>
+            <p>
+              We are pleased to serve the skateboarding community in Cumberland
+              and the greater Comox Vally! Come check out our new skate shop in
+              the same building as Moon’s Records. We carry a variety of decks
+              by BC brands as well as We’ve got decks, trucks, wheels, grip
+              tape, and gear. Whatever you need, we’ve got you covered. We also
+              sponsor youth skate camps called Drop into Life (link). Whether
+              you or your child wants to shred street, ramp, or bowl, our camps
+              provide a safe space for youth to learn the fundamentals of
+              skateboarding in a positive environment. The camps are taught by
+              seasoned and certified skateboard instructors.
+            </p>
+          </article>
+      
+      <article>
+        <h3>Sign Up for Drop in To Life</h3>
+        <div id="flex">
+          <div id="image3"><img src="images/drop in to life.jpg" width="400" alt="photo of young boy on a skateboard"></div>
+        <div class="article4">
+        <p>Drop in to life Youth skatecamps run from June-September at the Cumberland Skatepark.
+          The camps are for kids 7-18 year's old and are taught by cerified skateboard instructors.
+          Helmets are mandatory. Check the schedule for dates and times, and use the sign up button below!
+        </p>
+        </div>
+      </div>
+      </article>
+   
+    </div>
       </section>
     </main>
   </body>

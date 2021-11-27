@@ -40,3 +40,18 @@
   bottom: 100px
 }
 
+VIDEO CODE:
+
+      <video controls="controls" width="100%" height="240">
+          <source src="images/skatboarding_video.mov"> <!--not sure if this file type will work. If not, I'll use an MP4 video--> 
+        Your browser does not support the video tag.
+        </video>
+
+HEADER 4 Code in case I decide no video:
+
+.header4 {
+  background-image: url(images/background_4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;

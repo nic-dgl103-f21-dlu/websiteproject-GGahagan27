@@ -74,13 +74,20 @@ h3 {
   background-attachment: fixed;
   background-size: cover;
 }
-.header4 {
-  background-image: url(images/background_4.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
+
+
+.background-video {
+    width: 100vw;
+    height:100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+     
 }
+
 .header5 {
   background-image: url(images/background_5.jpeg);
   background-repeat: no-repeat;
@@ -89,7 +96,7 @@ h3 {
   background-size: cover;
 }
 
-.headerintro {
+.headerintro {                      /*Applies to headers 1, 3, 4, 5
   /*NEED TO FIX LINE HEIGHT*/
   display: block;
   padding: 20px;
@@ -99,7 +106,7 @@ h3 {
   position: absolute;
   bottom: 250px;
 }
-.headerintro2 {
+.headerintro2 {   /*apples to header 2/Page 2*/
   /*NEED TO FIX LINE HEIGHT*/
   display: block;
   padding: 20px;
@@ -134,7 +141,7 @@ nav li a {
 
 /*Navigation Ends  */
 
-/*section applied to pages one, two and 3*/
+/*section applied to pages one, two and 3 and 4*/
 .section {
   display: flex;
   flex: row;
@@ -229,3 +236,41 @@ nav li a {
   text-align: justify;
   border: solid 5px red;
 }
+
+/*Page 4 Starts here */
+
+#logo {padding-left:0;
+  padding-bottom:70px;
+  margin-bottom:70px;}
+
+.image2 {
+  display: block;
+  padding: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.article4 {
+  
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 20px;
+    text-align: justify;
+}
+
+#article5  {
+  padding-left: 40px;
+  padding-right: 15px;
+  margin-left: 40px;
+  margin-right: 15px;
+  text-align: justify;
+}
+
+#flex {display:flex;
+       flex-direction: row-reverse;}
+
+#image3 { display: block;
+  padding: 0px 10px 0px 10 px;
+  margin-left: 10px;
+  margin-right: 10px;}
