@@ -327,7 +327,14 @@ ul a:hover {
 .nav ul a { color:#a1b9ba}
 
 /*Still trying to figure out a way to get the navigation links to hover on this page. ONLY FIGURE OUT IF TIME!!!"*/
-
+.section {
+  display: flex;
+  flex: row;
+  white-space: normal;
+  margin-left: 25px;
+  margin-right: 75px;
+  margin-bottom: 100px;
+}
 
 .headerintro3 {
   /*Applies to headers 1, 3, 4, 5
