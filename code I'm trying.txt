@@ -92,7 +92,9 @@ Original Header Intro:
           <!--Might want to make this text bigger, or make "New Skate Shop even bigger. Add a "Click the Link"-->
           <!--Link to the Skateshop. Italicize it and make it a different color-->
         </div>
-
+ 
+ Try this again tomorrow:
+ 
           Looking from Moon’s merch? We’ve got Moon’s branded unisex tees,
         hoodies, sweatshirts, hats, and more. Looking to rock the party? We have
         an assortment of turntables and speakers in stock
