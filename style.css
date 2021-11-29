@@ -90,7 +90,7 @@ h4 {
   background-size: cover;
 }
 .header3 {
-  background-image: url(images/events_5.jpg);
+  background-image: url(images/events_6.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -184,6 +184,9 @@ nav a:hover {
   color: #ff0000;
 }
 
+subnav {
+  overflow: hidden;
+}
 /*Navigation Ends  */
 
 /*section applied to pages one, two and 3 and 4*/
@@ -247,7 +250,7 @@ nav a:hover {
 
 #ul {
   position: relative;
-  top:100px;
+  top: 100px;
 }
 
 ul a:hover {
@@ -319,6 +322,48 @@ ul a:hover {
   padding-left: 0;
   padding-bottom: 70px;
   margin-bottom: 70px;
+}
+ /*trying to figure out how to target skateshop navigation for a different color. If I can't figure it out...se la vie and REMOVE THIS */
+
+.nav ul a { color:#a1b9ba}
+
+/*Still trying to figure out a way to get the navigation links to hover on this page. ONLY FIGURE OUT IF TIME!!!"*/
+
+
+.headerintro3 {
+  /*Applies to headers 1, 3, 4, 5
+  /*NEED TO FIX LINE HEIGHT*/
+  display: block;
+  padding: 20px;
+  margin-left: 20px;
+  line-height: 1em;
+  color: white;
+  position: absolute;
+  bottom: 10px;
+}
+
+#ulskate {
+  list-style-type: disc;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  padding: 0px;
+  font-size: 25px;
+  font-weight: bold;
+  width: 700px;
+  line-height: 1.5;
+  color:#a1b9ba;
+  margin-left: 25px;
+}
+
+
+
+#p {
+  /*this is appled to most of the header text subheadings*/
+  font-family: Montserrat;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.5;
+  color:#a1b9ba;
 }
 
 .image2 {
