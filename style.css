@@ -198,10 +198,10 @@ nav a:hover { color: #FF0000; }
 
 #img {
   display: block;
-  padding: 40px;
-  margin-left: 40px;
+  padding:50px 10px 50px 50px;
+  margin: 50px;
   margin-right: 20px;}
-
+  
 .article {
   padding-left: 40px;
   padding-right: 20px;
