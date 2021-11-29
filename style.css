@@ -7,7 +7,7 @@ body {
   background-color: black;
   color: white;
   font-family: "Raleway", sans-serif;
-  font-size: 1.2em;
+  font-size: 1.1em;
   line-height: 1.5em;
 }
 
@@ -200,15 +200,15 @@ nav a:hover { color: #FF0000; }
   display: block;
   padding: 40px;
   margin-left: 40px;
-  margin-right: 40px;
-}
+  margin-right: 20px;}
 
 .article {
   padding-left: 40px;
   padding-right: 40px;
   margin-left: 40px;
   margin-right: 40px;
-  height: 900px;
+  margin-bottom: 50px;
+  height:auto;
   text-align: justify;
 }
 
