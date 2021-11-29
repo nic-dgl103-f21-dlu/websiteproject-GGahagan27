@@ -190,17 +190,16 @@ subnav {
 /*Navigation Ends  */
 
 /*section applied to pages one, two and 3 and 4*/
+
+
+/*Text Ends*/
 .section {
   display: flex;
   flex: row;
   white-space: normal;
-  padding: 0px 100px 0px 100px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0px px 0px 50px;
+  margin-right:100px;
 }
-
-/*Text Ends*/
-
 /*page one styling starts here */
 .span {
   color: white;
