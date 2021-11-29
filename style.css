@@ -232,13 +232,27 @@ nav a:hover {
 
 /*PAGE 2 starts */
 
-#listwrapper {display:flex;
-              flex-direction: row;
-              justify-content: space-around;
-              list-style-type: none;
-              font-family: "Montserrat", sans-serif;
-              font-size: 40px;
-              font-weight: bold;}
+#listwrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  list-style-type: none;
+  font-family: "Montserrat", sans-serif;
+  padding: 0px;
+  font-size: 25px;
+  font-weight: bold;
+  width: 700px;
+}
+
+#ul {
+  position: relative;
+  top:100px;
+}
+
+ul a:hover {
+  color: #ff0000;
+}
 
 #article {
   padding: 0px 40px 0px 40px;
@@ -283,7 +297,7 @@ nav a:hover {
   margin-left: 40px;
   margin-right: 50px;
   width: 600px;
-  height: 950px;
+  height: 900px;
   text-align: justify;
   border: solid 5px red;
 }
@@ -293,7 +307,7 @@ nav a:hover {
   margin-left: 50px;
   margin-right: 40px;
   width: 600px;
-  height: 950px;
+  height: 900px;
   text-align: justify;
   border: solid 5px red;
 }
