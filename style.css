@@ -44,6 +44,7 @@ h1 {
 h2 {
   font-size: 50px;
   color: red;
+  line-height: 1.1em;
 }
 h3 {
   font-size: 30px;
@@ -51,9 +52,10 @@ h3 {
 
 h4 {
   font-size: 20px;
+  line-height:1.1em;
 }
 
-.p {
+.p {    /*this is appled to most of the header text subheadings*/
   font-family: Montserrat;
   font-size: 25px;
   font-weight: bold;
@@ -109,7 +111,7 @@ h4 {
   background-size: cover;
 }
 #header6 {background-color:#8fc9ca;
-  height:250px; 
+  height: 300px; 
   width:100%;
   position:inherit
   }
@@ -123,9 +125,14 @@ h4 {
   margin-left: 20px;
   line-height: 1em;
   color: white;
-  position: absolute;
-  bottom: 250px;
+  position:absolute;
+  bottom: 200px;
+
 }
+
+ #flexwrapper {display:flex;
+              }
+
 .headerintro2 {
   /*apples to header 2/Page 2*/
   /*NEED TO FIX LINE HEIGHT*/
@@ -163,6 +170,9 @@ nav li a {
   font-weight: bold;
   text-decoration: none;
 }
+
+nav a:link { color:white; }
+nav a:hover { color: #FF0000; }
 
 /*Navigation Ends  */
 
@@ -368,7 +378,7 @@ nav li a {
 
 .page6 {background-color:honeydew}
 
-#headerintro {
+.flexheader {
  
   display: flex;
   flex-direction:row;
