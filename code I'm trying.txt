@@ -112,3 +112,36 @@ Original Header Intro:
   margin-bottom: 50px;
   text-align: justify;
 }
+
+Current at 10:26 Paste after next change
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 1em;
+  line-height: 1.3em;
+}
+
+.section {
+  display: flex;
+  flex: row;
+  white-space: normal;
+  padding: 0px 100px 0px 100px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+
+#img {
+  display: block;
+  padding-right:40px;
+  padding-top:30px;
+ }
+
+.article {display:block;
+          padding-left:20px;
+          margin-left:20px;
+          text-align: justify;
+
+}
