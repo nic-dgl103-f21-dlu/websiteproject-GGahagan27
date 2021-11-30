@@ -121,7 +121,7 @@ h4 {
   right: 0;
   top: 0;
   bottom: 0;
-  z-index: index -1;
+  z-index: 0;
 }
 
 .header5 {
@@ -210,9 +210,9 @@ subnav {
 /*Text Ends*/
 .section {
   display: flex;
-  flex: row;
+  flex-direction: row;
   white-space: normal;
-  padding: 0px px 0px 50px;
+  padding: 0px 0px 50px 0px;
   margin-right: 100px;
 }
 /*page one styling starts here */
@@ -347,7 +347,7 @@ ul a:hover {
 /*Still trying to figure out a way to get the navigation links to hover on this page. ONLY FIGURE OUT IF TIME!!!"*/
 .section {
   display: flex;
-  flex: row;
+  flex-direction: row;
   white-space: normal;
   margin-left: 25px;
   margin-right: 75px;
@@ -415,7 +415,7 @@ ul a:hover {
 
 #image3 {
   display: block; /*Drop in to Life poster bottom right*/
-  padding: 10px 10px 0px 10 px;
+  padding: 10px 10px 0px 10px;
   margin: 30px 5px 0px 10px;
   border: solid 1px white;
 }
@@ -465,7 +465,7 @@ ul a:hover {
 .categorywrap {
   margin: 0px 10px 10px;
   padding-right: 50px;
-  padding: left 50px;
+  padding-left: 50px;
   text-align: center;
 }
 
