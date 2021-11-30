@@ -7,7 +7,7 @@ body {
   background-color: black;
   color: white;
   font-family: "Raleway", sans-serif;
-  font-size: 1.1em;
+  font-size: 1em;
   line-height: 1.5em;
 }
 
@@ -417,13 +417,11 @@ ul a:hover {
 }
 
 #button {
-  padding-top: 40px;
-  margin-top: 60px;
+  padding-top: px;
+  margin-top: px;
 }
 
 #bheading {
-  padding-top: 40px;
-  margin-top: 30px;
   font-size: larger;
   font-style: italic;
 }
