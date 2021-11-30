@@ -24,6 +24,12 @@ header {
   position: relative;
 }
 
+footer { display: block;
+  background-color: #010f15;;
+   width:100%;
+   height:200px;}
+
+
 a {
   color: rgb(246, 250, 239);
 }
@@ -75,7 +81,7 @@ h4 {
 /*HEADER PHOTOS SUBJECT TO CHANGE*/
 /*mIGHT BE ABLE TO CONSOLIDATE ALL OF THIS WITH COMMAS BETWEEN IMAGE LINKS*/
 .header1 {
-  background-image: url(images/background_1_transparentblue.jpg); /* Replacing all headers after reducing opacity and file size in Photoshop--AlSO! gotta figure out ASAP how to get the photos zoomed out correctly! */
+  background-image: url(images/background_1_blue.jpg); /* Replacing all headers after reducing opacity and file size in Photoshop--AlSO! gotta figure out ASAP how to get the photos zoomed out correctly! */
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -173,6 +179,7 @@ nav ul {
 nav li a {
   color: white;
   font-family: "Montserrat", sans-serif;
+  font-size: 20px;
   font-weight: bold;
   text-decoration: none;
 }
@@ -279,6 +286,7 @@ ul a:hover {
 .galleryimg {
   margin: 1em;
   box-shadow: 10px 10px #777;
+  margin-bottom:200px
 }
 
 /*Page 2 Ends*/
@@ -416,10 +424,6 @@ ul a:hover {
   border-radius: 10px;
 }
 
-#button {
-  padding-top: px;
-  margin-top: px;
-}
 
 #bheading {
   font-size: larger;
@@ -435,19 +439,25 @@ ul a:hover {
 /*Page 5 Starts Here */
 .shop {
   font-size: 25px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 200px;
+  padding-right: 200px;
+  margin-left:50px;
+  margin-right:50px;
   text-align: center;
+  line-height:1.2;
 }
 .flexshop {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  padding: 0px 70px 0px 70px;
-}
+  padding: 0px 70px 70px 70px;
+  margin-bottom:100px;}
+  
 .categorywrap {
-  margin: 0px 50px 50px;
+  margin: 0px 10px 10px;
+  padding-right:50px; 
+  padding: left 50px;
   text-align: center;
 }
 
