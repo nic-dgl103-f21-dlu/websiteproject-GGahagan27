@@ -353,9 +353,11 @@ ul a:hover {
 /*trying to figure out how to target skateshop navigation for a different color. If I can't figure it out...se la vie and REMOVE THIS */
 
 .nav ul a {
-  color: #a1b9ba;
+  color:#a1b9ba;
 }
-
+.nav a:link {color:#a1b9ba
+}
+.nav a:hover {color: red}
 /*Still trying to figure out a way to get the navigation links to hover on this page. ONLY FIGURE OUT IF TIME!!!"*/
 
 
