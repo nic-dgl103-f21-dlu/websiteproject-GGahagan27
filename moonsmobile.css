@@ -7,17 +7,40 @@ body {
   background-color: black;
   color: white;
   font-family: "Raleway", sans-serif;
-  font-size: 1.2em;
+  font-size: 1em;
   line-height: 1.5em;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+header {
+  background-color: #e8eef1;
+  display: block;
+  width: 100vw;
+  height: 900px;
+  position: relative;
+}
+
+footer {
+  display: block;
+  background-color: #010f15;
+  width: 100%;
+  height: 200px;
+}
+
+.footer {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 50px;
 }
 
 a {
   color: rgb(246, 250, 239);
-}
-
-img {
-  max-width: 100%;
-  height: auto;
 }
 
 /*Text Starts*/ /*Will change text size values to em'sor rems if needed for responsiveness*/
@@ -33,15 +56,16 @@ h1 {
   display: block;
   padding: 30px;
   margin: 30px;
-  text-align: center;
-  font-size: 70px;
+  text-align:left;
+  font-size: 50px;
   line-height: 1em;
 }
 
 h2 {
   font-size: 50px;
   color: red;
-  line-height: 1.1em;
+  line-height: 1.2em;
+  
 }
 h3 {
   font-size: 30px;
@@ -49,11 +73,7 @@ h3 {
 
 h4 {
   font-size: 20px;
-}
-
-#wrapper {
-  background-color: black;
-  display: block;
+  line-height: 1.1em;
 }
 
 .p {
@@ -86,7 +106,7 @@ h4 {
   background-size: cover;
 }
 .header3 {
-  background-image: url(images/events_5.jpg);
+  background-image: url(images/events_6.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -102,7 +122,7 @@ h4 {
   right: 0;
   top: 0;
   bottom: 0;
-  z-index: index -1;
+  z-index: 0;
 }
 
 .header5 {
@@ -121,24 +141,29 @@ h4 {
 
 .headerintro {
   /*Applies to headers 1, 3, 4, 5
-    /*NEED TO FIX LINE HEIGHT*/
+  /*NEED TO FIX LINE HEIGHT*/
   display: block;
   padding: 20px;
   margin-left: 20px;
-  line-height: 1em;
+  line-height: 1.2em;
   color: white;
+  position: absolute;
+  
 }
+
+#flexwrapper {
+  display: flex;
+}
+
 .headerintro2 {
   /*apples to header 2/Page 2*/
   /*NEED TO FIX LINE HEIGHT*/
   display: block;
   padding: 20px;
   margin-left: 20px;
-  line-height: 1em;
-  color: white;
-  position: absolute;
-  bottom: 100px;
-}
+  line-height: 1.1em;
+  color: white;}
+
 #img2 {
   position: absolute;
   bottom: 400px;
@@ -146,12 +171,7 @@ h4 {
 
 /*Navigation Starts. Ad a navigation element selector and possible navwrrapper class to add CSS box model to eventtually*/
 
-nav {
-  position: relative;
 
-  margin-right: 20px;
-  z-index: 100;
-}
 
 nav ul {
   list-style-type: none;
@@ -171,19 +191,17 @@ nav a:hover {
   color: #ff0000;
 }
 
+
 /*Navigation Ends  */
 
 /*section applied to pages one, two and 3 and 4*/
-.section {
-  display: block;
-  flex: row;
-  white-space: normal;
-  padding: 20px;
-  margin: 20px;
-}
 
 /*Text Ends*/
-
+.section {
+  display:block;
+  padding: 0px 0px 50px 0px;
+  margin-right: 100px;
+}
 /*page one styling starts here */
 .span {
   color: white;
@@ -205,9 +223,48 @@ nav a:hover {
 #map {
   padding: 50px;
 }
+
+#map {
+  padding: 50px;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 350px;
+  width: 250px;
+  padding: 40px 40px 0px 40px;
+}
+.mapouter {
+  position: absolute;
+  text-align: right;
+  height: 350px;
+    width: 250px;}
 /*page 1 Ends*/
 
 /*PAGE 2 starts */
+
+#listwrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  list-style-type: none;
+  font-family: "Montserrat", sans-serif;
+  padding: 0px;
+  font-size: 25px;
+  font-weight: bold;
+  width: 700px;
+}
+
+#ul {
+  position: relative;
+  top: 100px;
+}
+
+ul a:hover {
+  color: #ff0000;
+}
 
 #article {
   padding: 0px 40px 0px 40px;
@@ -232,6 +289,7 @@ nav a:hover {
 .galleryimg {
   margin: 1em;
   box-shadow: 10px 10px #777;
+  margin-bottom: 200px;
 }
 
 /*Page 2 Ends*/
@@ -252,7 +310,7 @@ nav a:hover {
   margin-left: 40px;
   margin-right: 50px;
   width: 600px;
-  height: 950px;
+  height: 900px;
   text-align: justify;
   border: solid 5px red;
 }
@@ -262,7 +320,7 @@ nav a:hover {
   margin-left: 50px;
   margin-right: 40px;
   width: 600px;
-  height: 950px;
+  height: 900px;
   text-align: justify;
   border: solid 5px red;
 }
@@ -274,6 +332,54 @@ nav a:hover {
   padding-left: 0;
   padding-bottom: 70px;
   margin-bottom: 70px;
+}
+/*trying to figure out how to target skateshop navigation for a different color. If I can't figure it out...se la vie and REMOVE THIS */
+
+.nav ul a {
+  color: #a1b9ba;
+}
+
+/*Still trying to figure out a way to get the navigation links to hover on this page. ONLY FIGURE OUT IF TIME!!!"*/
+.section {
+  display:block; 
+  white-space: normal;
+  margin-left: 25px;
+  margin-right: 75px;
+  margin-bottom: 100px;
+}
+
+.headerintro3 {
+  /*Applies to headers 1, 3, 4, 5
+  /*NEED TO FIX LINE HEIGHT*/
+  display: block;
+  padding: 20px;
+  margin-left: 20px;
+  line-height: 1em;
+  color: white;
+  position: absolute;
+  bottom: 10px;
+}
+
+#ulskate {
+  list-style-type: disc;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  padding: 0px;
+  font-size: 25px;
+  font-weight: bold;
+  width: 700px;
+  line-height: 1.5;
+  color: #a1b9ba;
+  margin-left: 25px;
+}
+
+#p {
+  /*this is appled to most of the header text subheadings*/
+  font-family: Montserrat;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #a1b9ba;
 }
 
 .image2 {
@@ -303,7 +409,7 @@ nav a:hover {
 
 #image3 {
   display: block; /*Drop in to Life poster bottom right*/
-  padding: 10px 10px 0px 10 px;
+  padding: 10px 10px 0px 10px;
   margin: 30px 5px 0px 10px;
   border: solid 1px white;
 }
@@ -320,14 +426,7 @@ nav a:hover {
   border-radius: 10px;
 }
 
-#button {
-  padding-top: 40px;
-  margin-top: 60px;
-}
-
 #bheading {
-  padding-top: 40px;
-  margin-top: 30px;
   font-size: larger;
   font-style: italic;
 }
@@ -341,19 +440,26 @@ nav a:hover {
 /*Page 5 Starts Here */
 .shop {
   font-size: 25px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 200px;
+  padding-right: 200px;
+  margin-left: 50px;
+  margin-right: 50px;
   text-align: center;
+  line-height: 1.2;
 }
 .flexshop {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  padding: 0px 70px 0px 70px;
+  padding: 0px 70px 70px 70px;
+  margin-bottom: 100px;
 }
+
 .categorywrap {
-  margin: 0px 50px 50px;
+  margin: 0px 10px 10px;
+  padding-right: 50px;
+  padding-left: 50px;
   text-align: center;
 }
 
@@ -365,7 +471,7 @@ nav a:hover {
   background-color: honeydew;
 }
 
-#headerintro {
+.flexheader {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -423,11 +529,4 @@ input[type="submit"] {
   font-size: 20px;
   font-weight: bold;
   color: white;
-}
-
-footer {
-  display: block;
-  background-color: #010f15;
-  width: 100%;
-  height: 200px;
 }
