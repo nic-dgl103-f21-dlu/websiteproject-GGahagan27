@@ -245,6 +245,19 @@ subnav {
 #map {
   padding: 50px;
 }
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 350px;
+  width: 250px;
+  padding: 40px 40px 0px 40px;
+}
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 350px;
+    width: 250px;}
 /*page 1 Ends*/
 
 /*PAGE 2 starts */
