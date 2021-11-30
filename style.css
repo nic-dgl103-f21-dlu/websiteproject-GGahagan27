@@ -7,7 +7,7 @@ body {
   background-color: black;
   color: white;
   font-family: "Raleway", sans-serif;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 1.5em;
 }
 
@@ -413,6 +413,8 @@ ul a:hover {
 #article5 {
   padding-top: 15px;
 }
+
+.br {width:400px}
 
 #flex {
   display:flex;
