@@ -256,6 +256,11 @@ nav a:hover {
   position: relative;
   text-align: right;
 }
+
+iframe 
+  { border: solid 2px red
+  
+  }
 /*page 1 Ends*/
 
 
@@ -554,61 +559,5 @@ input[type="submit"] {
 
 /*Media Query*/
 
-@media only screen and (max-width: 600px) 
-{  .headerintro {
-    display: block;
-    padding: 20px;
-    margin-left: 20px;
-    line-height: 1.2em;
-    color: white;
-    position: absolute;
-  }
-
-  h2 {
-    font-size: 50px;
-    color: red;
-    line-height: 1.2em;
-  }
-
-  .p {
-    /*this is appled to most of the header text subheadings*/
-    font-family: Montserrat;
-    font-size: 25px;
-    font-weight: bold;
-    line-height: 1.5;
-  }
-
-  .section {
-    display: block;
-    padding: 0px 0px 50px 0px;
-    margin-right: 100px;
-  }
-
-  .span {
-    color: white;
-  }
-  .image {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .article {
-    text-align: justify;
-  }
-
-  .gmap_canvas {
-    overflow: hidden;
-    background: none !important;
-    height: 350px;
-    width: 250px;
-  }
-  .mapouter {
-    position: relative;
-    text-align: right;
-    height: 350px;
-    width: 250px;
-  }
-
-  
-}
+/*took out the media query because I could not make it work*/
 
