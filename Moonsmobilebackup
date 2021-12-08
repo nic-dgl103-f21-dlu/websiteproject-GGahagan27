@@ -7,8 +7,8 @@ body {
   background-color: black;
   color: white;
   font-family: "Raleway", sans-serif;
-  font-size: 15px;
-  line-height: 1.5em;
+  font-size: .9em;
+  line-height: 1.1em;
 }
 
 html,
@@ -20,7 +20,7 @@ header {
   background-color: #e8eef1;
   display: block;
   width: 100vw;
-  height: 900px;
+  height: 400px;
   position: relative;
 }
 
@@ -43,6 +43,9 @@ a {
   color: rgb(246, 250, 239);
 }
 
+
+
+
 /*Text Starts*/ /*Will change text size values to em'sor rems if needed for responsiveness*/
 
 h1,
@@ -54,38 +57,39 @@ h4 {
 }
 h1 {
   display: block;
-  padding: 30px;
-  margin: 30px;
-  text-align: center;
-  font-size: 60px;
+ 
+  text-align:left;
+  font-size: 30px;
   line-height: 1em;
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 40px;
   color: red;
-  line-height: 1.1em;
+  line-height: 1.2em;
+  padding:0px;
 }
 h3 {
-  font-size: 30px;
+  font-size: 15px;
 }
 
 h4 {
-  font-size: 20px;
+  font-size: 15px;
   line-height: 1.1em;
 }
 
 .p {
   /*this is appled to most of the header text subheadings*/
   font-family: Montserrat;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
   line-height: 1.5;
 }
 
-.logo {
-  padding: 20px;
-  margin: 20px;
+.logo {float:right;
+  padding: 10px;
+  margin-right:10px;
+
 }
 /*HEADER PHOTOS SUBJECT TO CHANGE*/
 /*mIGHT BE ABLE TO CONSOLIDATE ALL OF THIS WITH COMMAS BETWEEN IMAGE LINKS*/
@@ -142,12 +146,12 @@ h4 {
   /*Applies to headers 1, 3, 4, 5
   /*NEED TO FIX LINE HEIGHT*/
   display: block;
-  padding: 20px;
-  margin-left: 20px;
-  line-height: 1em;
+  padding: 5px;
+  
+  line-height: 1.2em;
   color: white;
   position: absolute;
-  bottom: 200px;
+  
 }
 
 #flexwrapper {
@@ -160,11 +164,9 @@ h4 {
   display: block;
   padding: 20px;
   margin-left: 20px;
-  line-height: 1em;
-  color: white;
-  position: absolute;
-  bottom: 100px;
-}
+  line-height: 1.1em;
+  color: white;}
+
 #img2 {
   position: absolute;
   bottom: 400px;
@@ -172,23 +174,16 @@ h4 {
 
 /*Navigation Starts. Ad a navigation element selector and possible navwrrapper class to add CSS box model to eventtually*/
 
-nav {
-  float: right;
-  position: relative;
-  float: right;
-  padding: 40px;
-  margin-right: 20px;
-  z-index: 100;
-}
+nav {font-size:15px}
 
 nav ul {
   list-style-type: none;
+  padding:5px;
 } /*Make this a Nav UL class*/
 
 nav li a {
   color: white;
   font-family: "Montserrat", sans-serif;
-  font-size: 20px;
   font-weight: bold;
   text-decoration: none;
 }
@@ -200,70 +195,51 @@ nav a:hover {
   color: #ff0000;
 }
 
+
 /*Navigation Ends  */
 
 /*section applied to pages one, two and 3 and 4*/
 
 /*Text Ends*/
 
+  
+
 /*page one styling starts here */
-.section {
-  display: flex;
-  flex-direction: row;
-  white-space: normal;
-  margin-left: 75px;
-  margin-right: 75px;
-  margin-bottom: 75px;
-}
 .span {
   color: white;
 }
 .image {
+  display:none;
   width: 100%;
   height: auto;
-}
-
-#img {
-  display: block;
-  padding-right: 40px;
-  padding-top: 30px;
+  max-width:600px;
+  margin-right:auto;
+  margin-left:auto;
 }
 
 .article {
-  display: block;
-  padding-left: 20px;
-  margin-left: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
   text-align: justify;
 }
 
-.flex2 {
-  display: flex; /*This is the flex container containing the location content and the map. I have a feeling this is probably convoluted and that there was probably a better way...*/
-  flex-direction: row;
-}
-
 #map {
-  padding: 50px;
+  padding:0px;
 }
 
 .gmap_canvas {
-  overflow: hidden;
   background: none !important;
-  height: 250px;
-  width: 300px;
-  padding: 40px 40px 0px 40px;
+  height: 300px;
+  width: 200px;
 }
 .mapouter {
   position: relative;
-  text-align: right;
-}
-
-iframe 
-  { border: solid 2px red
-  
-  }
+  text-align: center;
+  height: 350px;
+    width: 250px;}
 /*page 1 Ends*/
-
-
 
 /*PAGE 2 starts */
 
@@ -361,13 +337,12 @@ ul a:hover {
 .nav ul a {
   color: #a1b9ba;
 }
-.nav a:link {
-  color: #a1b9ba;
-}
-.nav a:hover {
-  color: red;
-}
+
 /*Still trying to figure out a way to get the navigation links to hover on this page. ONLY FIGURE OUT IF TIME!!!"*/
+.section {
+  display:block; 
+  white-space: normal; 
+}
 
 .headerintro3 {
   /*Applies to headers 1, 3, 4, 5
@@ -412,30 +387,26 @@ ul a:hover {
 }
 
 .article4 {
-  padding-left: 40px;
+  padding-left: 0px;
+  padding-right: 20px;
   margin-left: 0px;
+  margin-right: 20px;
   text-align: justify;
 }
-#article4 {
-  padding-bottom: 60px;
-}
+
 #article5 {
   padding-top: 15px;
 }
 
-.hr {
-  width: 400px;
-}
-
 #flex {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
 }
 
 #image3 {
   display: block; /*Drop in to Life poster bottom right*/
-  padding: 10px 0px 10px;
-  margin: 24px 5px 0px 10px;
+  padding: 10px 10px 0px 10px;
+  margin: 30px 5px 0px 10px;
   border: solid 1px white;
 }
 
@@ -449,7 +420,6 @@ ul a:hover {
   font-size: 1.5em;
   border: solid 5px #e8eef1;
   border-radius: 10px;
-  margin-bottom: 80px;
 }
 
 #bheading {
@@ -465,7 +435,7 @@ ul a:hover {
 
 /*Page 5 Starts Here */
 .shop {
-  font-size: 20px;
+  font-size: 25px;
   padding-left: 200px;
   padding-right: 200px;
   margin-left: 50px;
@@ -556,153 +526,3 @@ input[type="submit"] {
   font-weight: bold;
   color: white;
 }
-
-/*Media Query*/
-
-/*took out the media query because I could not make it work*/
-
-@media only screen and (max-width: 480px) {
-
-/*Globally applied styling/ Styling that goes on all the pages*/
-
-* {
-  box-sizing: border-box;
-}
-body {
-  background-color: black;
-  color: white;
-  font-family: "Raleway", sans-serif;
-  font-size: .9em;
-  line-height: 1.1em;
-}
-
-
-header {
-  background-color: #e8eef1;
-  display: block;
-  width: 100vw;
-  height: 400px;
-  position: relative;
-}
-
-footer {
-  display: block;
-  background-color: #010f15;
-  width: 100%;
-  height: 100px;
-}
-
-.footer {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  padding-top: 50px;
-}
-
-a {
-  color: rgb(246, 250, 239);
-}
-
-
-
-
-/*Text Starts*/ /*Will change text size values to em'sor rems if needed for responsiveness*/
-
-h1,
-h2,
-h3,
-h4 {
-  font-family: "Montserrat", sans-serif;
-  color: rgb(248, 52, 52);
-}
-h1 {
-  display: block;
-  text-align:left;
-  font-size: 30px;
-  line-height: 1em;
-}
-
-h2 {
-  font-size: 40px;
-  color: red;
-  line-height: 1.2em;
-  padding:0px;
-}
-h3 {
-  font-size: 15px;
-}
-
-h4 {
-  font-size: 15px;
-  line-height: 1.1em;
-}
-
-.p {
-  font-family: Montserrat;
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 1.5;
-}
-
-.logo {float:right;
-  padding: 10px;
-  margin-right:10px;
-
-}
-.headerintro {
-  /*Applies to headers 1, 3, 4, 5
-  /*NEED TO FIX LINE HEIGHT*/
-  display: block;
-  padding: 5px;
-  line-height: 1.2em;
-  color: white;
-  position: absolute;
-  
-}
-nav {font-size:15px}
-
-nav ul {
-  list-style-type: none;
-  padding:5px;
-} 
-
-
-.image {
-  display:none;
-  width: 100%;
-  height: auto;
-  max-width:600px;
-  margin-right:auto;
-  margin-left:auto;
-}
-
-.article {
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  text-align: justify;
-}
-
-#map {
-  padding:0px;
-}
-
-.gmap_canvas {
-  background: none !important;
-  height: 300px;
-  width: 200px;
-}
-.mapouter {
-  position: relative;
-  text-align: center;
-  height: 350px;
-    width: 250px;}
-/*page 1 Ends*/
-
-
-  
-}
-
-
