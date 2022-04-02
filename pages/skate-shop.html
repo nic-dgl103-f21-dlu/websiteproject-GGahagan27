@@ -3,12 +3,22 @@
   <head>
     <title>Skate Shop</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="style.css" />
-    <!--FAViCON LINK GOING HERE; MAKE FAVICON-->
+    <link rel="stylesheet" href="../styles/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Raleway&display=swap"
+      rel="stylesheet"/>
+    <script src="../components/navigation.js" defer></script>
+    <script src="../components/footer.js" defer></script>
+    <script src="../components/skate-shop-effect.js" defer></script>
+<!--FAViCON LINK GOING HERE; MAKE FAVICON-->
   </head>
   <body>
-    <header class="header3">
+    <header>
       <div>
+        <div class="dark-layer"></div>
         <video
           class="background-video"
           width="100"
@@ -18,17 +28,17 @@
           muted
           loop
         >
-          <source src="images/skatboarding_video.mov" />
+          <source src="../images/skatboarding_video.mov" />
           <!--not sure if this file type will work. If not, I'll use an MP4 video-->
           Your browser does not support the video tag.
         </video>
       </div>
-      <nav class="nav a:link" id="nav a:hover"> /* This already has an id. Maybe I need to change it to a class? */
-  
+      <nav class="nav" id="nav a:hover">
+        /* This already has an id. Maybe I need to change it to a class? */
       </nav>
       <div class="headerintro3">
         <img
-          src="images/2x/Logo_bluegrey.png"
+          src="../images/2x/Logo_bluegrey.png"
           width="250"
           alt="Moon's Records Logo"
           id="logo"
@@ -38,7 +48,7 @@
           Serving the Comox Valley's Skateboarding Community <br />
           Brands We Carry
         </p>
-        
+
         <ul id="ulskate">
           <li>Chance</li>
           <li>Powell Peralta</li>
@@ -54,7 +64,11 @@
       <!--this will either span the page wher the other headings have gone; or I will swap it with the photo on the left and put a heading here like the other pages-->
       <section class="section">
         <div>
-          <img src="images/skate_kid.jpg" class="image2" alt="kid holding a skateboard in a skateboard shop" />
+          <img
+            src="../images/skate_kid.jpg"
+            class="image2"
+            alt="kid holding a skateboard in a skateboard shop"
+          />
         </div>
         <!--image will be to the right of the article-->
         <!--Shop image will go here to the left of the article under the video-->
@@ -75,7 +89,7 @@
             </p>
           </article>
 
-          <hr class="hr">
+          <hr class="hr" />
 
           <article id="article5">
             <!--This section should move over to the right more and adjust photo  slightly on the right to align with content. Adjust margin and padding-->
@@ -83,7 +97,7 @@
             <div id="flex">
               <div>
                 <img
-                  src="images/dropintolife.jpg"
+                  src="../images/dropintolife.jpg"
                   width="300"
                   alt="photo of young boy on a skateboard"
                   id="image3"
@@ -99,20 +113,17 @@
                 </p>
                 <h4 id="bheading">Click the Button Below to Sign Up!</h4>
                 <div id="button">
-                  <a href="Page_6.html"><button class="button">Sign Up</button></a> <!--W3C Validator does not like my Button inside the anchor tag. I don't know how else to link my button to the form page, so I'm going to leave it-->
-                  
+                  <a href="Page_6.html"
+                    ><button class="button">Sign Up</button></a
+                  >
+                  <!--W3C Validator does not like my Button inside the anchor tag. I don't know how else to link my button to the form page, so I'm going to leave it-->
                 </div>
               </div>
             </div>
           </article>
         </div>
-       
       </section>
     </main>
-    <footer >
-      <div class="footer">
-      <p>@copy Moon's Records 11/25/2021 All Rights Reserved!</p>
-      <h3>Moon's Records ltd</h3></div>
-    </footer>
+    <footer></footer>
   </body>
 </html>

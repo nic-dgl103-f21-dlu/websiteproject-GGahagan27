@@ -3,7 +3,7 @@
   <head>
     <title>Moon's Records Homepage</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,50 +12,53 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Raleway&display=swap"
       rel="stylesheet"
     />
+
     <!--FAViCON LINK GOING HERE; MAKE FAVICON-->
+
+    <script src="../components/navigation.js" defer></script>
+    <script src="../components/footer.js" defer></script>
   </head>
   <body>
     <div>
       <header class="header1">
         <!--Might want to crop the header photo down even more...it's still pretty huge. Also make sure that all header photos are the same height-->
         <div>
-          <img>
-            src="images/2x/logosquare_white.png"
+          <img
+            src="../images/2x/logosquare_white.png"
             width="250"
             alt="Moon's Records Logo"
-            class="logo"
+            class="logo" />
+            <nav id="navigation">         
+            </nav>
           </div><!--Will probably change this photo or try a black and white version. Also want to add transparency with the addition of a background color.-->
-          <nav id="navigation">         
-          </nav>
-      
+            
         <div class="headerintro">
-          <h2 style="white-space: pre-wrap;"     >MOON'S RECORDS</h2>
+          <h2 style="white-space: pre-wrap;">MOON'S RECORDS</h2>
           <!--Add 1em line height to all headings in the CSS -->
           <p class="p">
             The Comox Valley's Best Selection of New and Used Vinyl
             <!--make the other headings a paragraph?-->
-            <a href="page_4.html">
+            <a href="skateshop.html">
               <br />
               Check Out Cumberland's
               <span class="span" style="color: aliceblue">NEW SKATE SHOP!</span>
             </a>
           </p>
           <!--Might want to make this text bigger, or make "New Skate Shop even bigger. Add a "Click the Link"-->
-          <!--Link to the Skateshop. Italicize it and make it a different color-->
+          <!--Link to the Skate shop. Italicize it and make it a different color-->
         </div>
       </header>
-
       <main>
         <div>
           <!--Need to figure out whether this Div should go inside the section since the heading is technichally apart of the section. Make sure it's consistent accross pages-->
           <h1 class="">Welcome to Moon's Records!</h1>
           <!--I'm not sure if these headings should go in the section element or not. They are going to be block elements so that they have white space around them-->
         </div>
-        <!--Not sure how to format this for flexbox. I think it should be all in one "section" with div's or article elements separating the "About" and "Conatact" sections to target the navigation. I could be wrong, but for now that's what I'm doing-->
+        <!--Not sure how to format this for flexbox. I think it should be all in one "section" with div's or article elements separating the "About" and "Contact" sections to target the navigation. I could be wrong, but for now that's what I'm doing-->
         <section class="section">
           <div id="img">
             <img
-              src="images/about_image.jpg"
+              src="../images/about_image.jpg"
               width="600"
               class=".image"
               alt="Photo of the outside of Moon's Records"
@@ -130,10 +133,6 @@
         </section>
       </main>
       <footer>
-        <div class="footer">
-          <p>@copy Moon's Records 11/25/2021 All Rights Reserved!</p>
-          <h3>Moon's Records ltd</h3>
-        </div>
       </footer>
     </div>
   </body>
