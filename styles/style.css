@@ -76,7 +76,7 @@ h4 {
 }
 
 .p {
-  /*this is appled to most of the header text subheadings*/
+  /*this is applied to most of the header text subheadings*/
   font-family: Montserrat;
   font-size: 25px;
   font-weight: bold;
@@ -561,9 +561,7 @@ input[type="submit"] {
 
 /*took out the media query because I could not make it work*/
 
-@media only screen and (max-width: 480px) {
-
-/*Globally applied styling/ Styling that goes on all the pages*/
+@media only screen and (max-width: 480px) { 
 
 * {
   box-sizing: border-box;
