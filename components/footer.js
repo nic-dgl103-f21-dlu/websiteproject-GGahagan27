@@ -1,3 +1,6 @@
+'Use Strict'
+//Author: Gillian Gahagan, Moon's Records Footer JS file. Last Modified: 
+
 const footerEl = document.querySelector("footer");
 
 footerEl.innerHTML = ` 

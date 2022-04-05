@@ -1,4 +1,4 @@
-const headerEl = document.querySelector(".headerintro3");
+var headerEl = document.querySelector(".headerintro3");
 const skateShopNavEl = document.querySelector(".nav");
 
 

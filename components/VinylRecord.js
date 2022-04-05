@@ -1,3 +1,5 @@
+//Author: Gillian Gahagan, Events page  for Moon's Records Website. Last Modified: -->
+'use strict'
 class VinylRecord {
   //created constructor function with two parameters, image and title, which we can update
   constructor(title, imageURL) {
@@ -7,40 +9,47 @@ class VinylRecord {
 }
 
 class VinylsComponent {
-  //created class vinylsComponent that calls
+  //created class vinylsComponent that calls the functions:
+  // 'fetchVinyls" which fetches the album cover links, and 'render' which displays the album covers
   constructor() {
-    //Created a constructor function with no parameters that (calls two methods?)//Ask Adam about this. Why isn't it "this.fetchVinyl = function()"
     this.fetchVinyls();
     this.render();
   }
 
-  #vinylRecords = []; // private property where we store our events
+  #vinylRecords = []; // private property where we store our record images 
 
   fetchVinyls() {
     this.#vinylRecords = [
-      new VinylRecord("../images/davidbowie-resized.jpg"), //  "../images/highquadraramblers_resized.jpg",
-      new VinylRecord("../images/Fela_resized.jpg"),
-      new VinylRecord("../images/buzzcocks_resized.jpg"),
+      // vinyl records class requires TWO parameters, 1st -> Vinyl Record Title 2nd -> Vinyl Record ImageURL
+      new VinylRecord(
+        "David Bowie Hunky Dory album Cover",
+        "../images/davidbowie-resized.jpg"
+      ), 
+      new VinylRecord(
+        "Fela Kuti Live in Detroit Album Cover",
+        "../images/Fela_resized.jpg"
+      ),
+      new VinylRecord(
+        "Sly and the Family Stone Album cover",
+        "../images/buzzcocks_resized.jpg"
+      ),
     ];
   }
 
-  render() {
-    const sectionEl = document.querySelector(".staffpicks"); //
+  render() {  
+    const sectionEl = document.getElementById("gallery");//used the "getElementById" method to reference the image gallery. 
 
-    for (let index = 0; index < this.#vinylRecords.length; index++) {
+    for (let index = 0; index < this.#vinylRecords.length; index++) { //created a for loop that iterates over the array "vinyRecords"  and renders the images 
       const vinyl = this.#vinylRecords[index];
-      const vinylEl = document.createElement("div"); // Created element called div using the DOM.
-      vinylEl.className = "album-gallery"; // Created Class using .className
-      //Referencing html element to display content using string interpolation.
-      vinylEl.innerHTML = `
-          <img src="${vinyl.imageURL}" width="400" alt="David Bowie Hunky Dory album Cover" class="galleryimg"> 
-          <img src="${vinyl.imageURL}" width="400" alt="Fela Kuti Live in Detroit Album Cover" class="galleryimg">
-          <img src="${vinyl.imageURL}" width="400" alt="Sly and the Family Stone Album cover" class="galleryimg"`;
-      sectionEl.appendChild(vinylEl);
+      const vinylEl = document.createElement("img"); //Created the html  element 'img' to insert images in the web page. 
+      vinylEl.src = vinyl.imageURL
+      vinylEl.alt = vinyl.title
+      vinylEl.className = "galleryimg"
+      sectionEl.appendChild(vinylEl);//Appended the vinyl element "img" to the the secionEL (Div with the id #gallery)
     }
   }
 }
 
 const vinyls = new VinylsComponent();
-
-//TODO Compare Events Js to this file to figure out what do do/Understand what I'm doing.
+// events.fetchVinyls() =>  executed in  the in the constructor
+// events.render();

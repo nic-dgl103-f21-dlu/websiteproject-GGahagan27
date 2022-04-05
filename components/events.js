@@ -1,6 +1,7 @@
 //Constructor function. Created class  'Event'
 //parameters assigned to variables(date, imageUrl, etc)
-//this.property assigns (paramaters?) to the variables
+//this.property assigns 5 parameters) to the variables
+//The purpose is to be able to update the elements of the Events section easily in the JS file, rather than the HTML file. 
 class MusicEvent {
   constructor(date, imageURL, title, price, description) {
     this.date = date;
@@ -11,7 +12,7 @@ class MusicEvent {
   }
 }
 //We've defined an Array named #events -> # means private
-//Created a method "fetchEvents()" --- HOLD THE PHONE--I've never seen methods created by constructor functions, which from what I understand create objects, not
+//Created a method "fetchEvents()" 
 //Created a method "render()"
 //Created the array and are passing the value to #events (this.#events)
 //Created new event objects that allow us to update the contents in the JS file rather than the HTML file. 
@@ -23,7 +24,7 @@ class EventsComponent {
 
   #musicEvents = []; // private property where we store our events
 
-  fetchEvents() {
+  fetchEvents() {  //Method that adds the values of our new Music 
     this.#musicEvents = [
       new MusicEvent(
         "SAT, Dec 4, 2021",
@@ -59,10 +60,12 @@ class EventsComponent {
   render() {
     const sectionEl = document.querySelector(".section2"); // TODO: Change section2 to 'section-music-events. Change it in the HTML, CSS, and on this line.
     for (let index = 0; index < this.#musicEvents.length; index++) {
-      const event = this.#musicEvents[index]; //Here we are giving the variable "event" the value of of the "#musicEvents" array.       const eventEl = document.createElement("div");
+      const event = this.#musicEvents[index]; //Here we are giving the variable "event" the value of of the "#musicEvents" array.       
+      const eventEl = document.createElement("div");//Created a div element to wrap the events section. 
       console.log(event)
     console.log(sectionEl)
       eventEl.className = "article2"; // TODO: Change article2 to "article-music-event" Change it everywhere/see above//Created element called div using the DOM--added class called "article2"(changing name)
+      //used .innerHTML to insert HTML for events in the web page using string interpolation. 
       eventEl.innerHTML = `
         <h3>${event.date}</h3>
         <img src="${event.imageURL}" width="400" alt="Photo of the High Quadra Ramblers">
@@ -73,12 +76,12 @@ class EventsComponent {
          <h3>Tickets: $${event.price}</h3><!--might change this heading size-->
          <a href="page_6.html"><h3 class="h3">Purchase Tickets</h3></a>  <!--link will open up purchase form page-->
          <!--BUY TICKETS NOW LINK GOES HERE. Don't forget to make pop-up form-->`;
-      sectionEl.appendChild(eventEl);
+      sectionEl.appendChild(eventEl);//Appending the new event div to the section element. 
     }
     console.log(sectionEl)
   }
 }
 
 const events = new EventsComponent();
-// events.fetchEvents() => we execute this in the constructor
+// events.fetchEvents() =>  executed in  the in the constructor
 // events.render();
